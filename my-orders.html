@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #acd9b2;
+            --white: #ffffff;
+            --black: #000000;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;            
+        }
+         
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .my-orders {           
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-content: center;
+        }
+        .my-orders-container {            
+            width: 300px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        h1 {
+            font-weight: bold;
+            font-size: var(--lg);
+            color: var(--black);
+            margin-top: 100px;
+            margin-bottom: 40px;            
+        }
+        .order-resume {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            margin-bottom: 24px;
+            align-items: center;
+            gap: 16px;               
+        }
+        
+        
+        .order-resume p:nth-child(1) {
+            font-weight: bold;
+            font-size: var(--md);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .order-resume p:nth-child(2) {
+            font-size: var(--sm);
+            margin: 0;
+            color: var(--very-light-pink);
+        }
+        .order-resume div:nth-child(2) {
+            text-align: end;
+        }
+    </style>
+</head>
+<body>
+    <div class="my-orders">
+        <div class="my-orders-container">
+            <h1>My orders</h1>
+            <div class="order-resume">
+                <div>
+                    <p class="order-date">04.25.2021</p>
+                    <p class="order-articles">6 articles</p>
+                </div>
+                <div>
+                    <p class="order-total">$ 120.00</p>
+                </div>
+                <img src="./icons/Platzi_YardSale_Icons/flechita.svg" alt="arrow">
+            </div>
+            <div class="order-resume">
+                <div>
+                    <p class="order-date">02.20.2021</p>
+                    <p class="order-articles">6 articles</p>
+                </div>
+                <div>
+                    <p class="order-total">$ 120.00</p>
+                </div>
+                <img src="./icons/Platzi_YardSale_Icons/flechita.svg" alt="arrow">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
